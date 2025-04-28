@@ -43,9 +43,7 @@ This project focuses on how to build a clean, maintainable PHP application **wit
    cd your-repo
 2. **Install dependencies**
 
-   ```bash
-composer install
-    ```
+```composer install```
 3. **Configure environment**
 
 ```bash
@@ -55,10 +53,8 @@ cp .env.example .env
 
 3. **Set up the database**
 
-sql
-Copy
-Edit
-CREATE DATABASE mvc_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+```CREATE DATABASE mvc_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE mvc_app;
 
 -- Users table
@@ -79,7 +75,7 @@ CREATE TABLE `articles` (
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (`author_id`) REFERENCES `users`(`id`) ON DELETE SET NULL
-) ENGINE=InnoDB;
+) ENGINE=InnoDB;```
 Set your web server’s document root to the public/ directory
 
 **⚙️ Usage**
