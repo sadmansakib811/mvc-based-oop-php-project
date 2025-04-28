@@ -41,15 +41,15 @@ This project focuses on how to build a clean, maintainable PHP application **wit
    ```bash
    git clone https://github.com/YOUR_USERNAME/your-repo.git
    cd your-repo
-Install dependencies
+2. **Install dependencies**
 
-bash
+   ```bash
 Copy
 Edit
 composer install
 Configure environment
 
-bash
+   ```bash
 Copy
 Edit
 cp .env.example .env
