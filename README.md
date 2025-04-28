@@ -46,11 +46,12 @@ This project focuses on how to build a clean, maintainable PHP application **wit
    ```bash
 composer install
 
-Configure environment
+3. **Configure environment**
 
-
+```bash
 cp .env.example .env
-Open .env and fill in your database credentials, app URL, etc.
+```
+- Open .env and fill in your database credentials, app URL, etc.
 
 3. **Set up the database**
 
