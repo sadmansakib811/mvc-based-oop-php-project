@@ -44,14 +44,11 @@ This project focuses on how to build a clean, maintainable PHP application **wit
 2. **Install dependencies**
 
    ```bash
-Copy
-Edit
 composer install
+
 Configure environment
 
-bash
-Copy
-Edit
+
 cp .env.example .env
 Open .env and fill in your database credentials, app URL, etc.
 
