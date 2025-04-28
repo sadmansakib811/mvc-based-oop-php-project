@@ -43,7 +43,9 @@ This project focuses on how to build a clean, maintainable PHP application **wit
    cd your-repo
 2. **Install dependencies**
 
-```composer install```
+```
+composer install
+```
 3. **Configure environment**
 
 ```bash
@@ -75,53 +77,49 @@ CREATE TABLE `articles` (
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (`author_id`) REFERENCES `users`(`id`) ON DELETE SET NULL
-) ENGINE=InnoDB;```
+) ENGINE=InnoDB;
+```
 Set your web server’s document root to the public/ directory
 
 **⚙️ Usage**
-Home Page: GET / — paginated list of articles
+- Home Page: GET / — paginated list of articles
 
-View Article: GET /view/{id}
+- View Article: GET /view/{id}
 
-Create Article: GET|POST /create (auth required)
+- Create Article: GET|POST /create (auth required)
 
-Edit Article: GET|POST /edit/{id} (author or admin)
+- Edit Article: GET|POST /edit/{id} (author or admin)
 
-Delete Article: POST /delete/{id} (author or admin)
+- Delete Article: POST /delete/{id} (author or admin)
 
-User Management (admin only):
+-User Management (admin only):
 
-List users: GET /admin/users
+- List users: GET /admin/users
 
-Change role: GET|POST /user/role/edit/{id}
+- Change role: GET|POST /user/role/edit/{id}
 
-✨ Contributing
+**✨ Contributing**
 Fork this repository
 
-Create your feature branch
+- Create your feature branch
 
-bash
-Copy
-Edit
+```
 git checkout -b feature/YourFeature
-Commit your changes
+```
+- Commit your changes
 
-bash
-Copy
-Edit
+```
 git commit -m "Add awesome feature"
-Push to the branch
+```
+- Push to the branch
 
-bash
-Copy
-Edit
-git push origin feature/YourFeature
-Open a Pull Request
 
-📄 License
-This project is licensed under the MIT License.
+- git push origin feature/YourFeature
+- Open a Pull Request
+
+**📄 License**
+- This project is licensed under the MIT License.
 
 Tip: This template demonstrates secure, framework-free PHP using MVC best practices. Feel free to swap in other single-purpose libraries (templating, validation, routing) while keeping the core structure and security intact.
 
-Copy
-Edit
+
