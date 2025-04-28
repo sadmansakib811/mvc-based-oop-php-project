@@ -45,7 +45,7 @@ This project focuses on how to build a clean, maintainable PHP application **wit
 
    ```bash
 composer install
-
+    ```
 3. **Configure environment**
 
 ```bash
