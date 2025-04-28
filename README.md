@@ -49,13 +49,13 @@ Edit
 composer install
 Configure environment
 
-   ```bash
+bash
 Copy
 Edit
 cp .env.example .env
 Open .env and fill in your database credentials, app URL, etc.
 
-Set up the database
+3. **Set up the database**
 
 sql
 Copy
@@ -84,27 +84,7 @@ CREATE TABLE `articles` (
 ) ENGINE=InnoDB;
 Set your web server’s document root to the public/ directory
 
-🏗️ Project Structure
-pgsql
-Copy
-Edit
-├── app/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Views/
-│   ├── Config/
-│   │   └── Database.php
-│   └── routes.php
-├── core/
-│   └── config.php
-├── public/
-│   ├── index.php
-│   └── uploads/
-├── vendor/
-├── .env.example
-├── composer.json
-└── README.md
-⚙️ Usage
+**⚙️ Usage**
 Home Page: GET / — paginated list of articles
 
 View Article: GET /view/{id}
